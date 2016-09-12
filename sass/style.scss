@@ -64,6 +64,8 @@ table {
 	font-weight: normal;
 }
 
+$sh__px: 7px;
+
 .clear {
 	clear: both;
 }
@@ -115,8 +117,8 @@ box-sizing: padding-box;
     margin-bottom: 20px;
     background: -webkit-linear-gradient(#E8E8E8, #DBDBDB);
     background: -o-linear-gradient(#E8E8E8, #DBDBDB);
-    background: linear-gradient(#E8E8E8 50%, #DBDBDB);
-    
+    background: linear-gradient(#F2F2F2 50%, #F5F5F5);
+    @extend %box-style;
 
 	img {
 		border-radius: 0px;
@@ -190,16 +192,16 @@ vertical-align: bottom;
     display: inline-block;
     border-radius: 10px;
     border: 2px solid red;
-    @extend %box-style;
+//removed shadows
 }
 
 
 %box-style {
-	-webkit-box-shadow: 20px 20px #ccc;
-    -moz-box-shadow: 20px 20px #ccc;
-    -ms-box-shadow: 20px 20px #ccc;
-    -o-box-shadow: 20px 20px #ccc;
-    box-shadow: 20px 20px #ccc;
+	-webkit-box-shadow: $sh__px $sh__px $sh__px #ccc;
+    -moz-box-shadow: $sh__px $sh__px $sh__px #ccc;
+    -ms-box-shadow: $sh__px $sh__px $sh__px #ccc;
+    -o-box-shadow: $sh__px $sh__px #ccc;
+    box-shadow: $sh__px $sh__px $sh__px #ccc;
 }
 
 h1.header-title {

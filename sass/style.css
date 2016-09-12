@@ -92,7 +92,7 @@ table {
     margin-bottom: 20px;
     background: -webkit-linear-gradient(#E8E8E8, #DBDBDB);
     background: -o-linear-gradient(#E8E8E8, #DBDBDB);
-    background: linear-gradient(#E8E8E8 50%, #DBDBDB); }
+    background: linear-gradient(#F2F2F2 50%, #F5F5F5); }
     .container-main .tweet-block img {
       border-radius: 0px;
       float: left;
@@ -138,12 +138,12 @@ table {
     display: inline-block;
     border-radius: 10px;
     border: 2px solid red; }
-  .container-main .item-main, .container-main .item-1, .container-main .item-2, .container-main .item-3, .container-main .item-4, .container-main .item-5, .container-main .item-6, .container-main .item-7, .container-main .item-8, .container-main .item-9, .container-main .item-10, .container-main .item-11, .container-main .item-12, .container-main .item-13, .container-main .item-14, .container-main .item-15 {
-    -webkit-box-shadow: 20px 20px #ccc;
-    -moz-box-shadow: 20px 20px #ccc;
-    -ms-box-shadow: 20px 20px #ccc;
-    -o-box-shadow: 20px 20px #ccc;
-    box-shadow: 20px 20px #ccc; }
+  .container-main .tweet-block {
+    -webkit-box-shadow: 7px 7px 7px #ccc;
+    -moz-box-shadow: 7px 7px 7px #ccc;
+    -ms-box-shadow: 7px 7px 7px #ccc;
+    -o-box-shadow: 7px 7px #ccc;
+    box-shadow: 7px 7px 7px #ccc; }
   .container-main .item-1 {
     width: 51px; }
   .container-main .item-2 {
