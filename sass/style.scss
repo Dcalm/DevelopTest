@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html,body {
+	background-color: #ccc !important; 
+	height: 100%;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+	font-family: 'Glyphicons Halflings';
+	src: url('../fonts/glyphicons-halflings-regular.eot');
+	src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+		 url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+		 url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflings-regular') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+.clear {
+	clear: both;
+}
+
+
+@media all and (max-width: 560px) {
+	.container-main {
+		width: 375px !important;
+	}
+}
+
+.container-main {
+
+border: 2px solid #E0E0E0;
+width: 70%;
+margin: auto;
+padding: 0px 10px;
+height: 100%;
+background-color: #fff;
+-webkit-box-sizing: border-box;
+-ms-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-o-box-sizing: border-box;
+box-sizing: border-box;
+overflow: auto;
+
+
+div {
+	margin: auto;
+}
+
+h1.container-main__title {
+	font-size: 50px;
+	color:#A2A2A2;
+	text-align: center;
+	padding-bottom: 20px;
+	text-decoration: underline;
+}
+
+.t_content {
+	margin-left: 79px;
+}
+
+.tweet-block {
+box-sizing: padding-box;
+	border: 2px solid #E2E2E2;
+	width: 90%;
+	padding: 20px 15px;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(#E8E8E8, #DBDBDB);
+    background: -o-linear-gradient(#E8E8E8, #DBDBDB);
+    background: linear-gradient(#E8E8E8 50%, #DBDBDB);
+    
+
+	img {
+		border-radius: 0px;
+		float: left;
+		padding-right: 10px;
+	}
+
+	span.date_span {
+		font-size: 12px;
+		text-decoration: underline;
+	}
+
+	span.date_span,article {
+       font-family: sans-serif;
+	}
+
+	article {
+		padding: 5px 0px;
+		font-size: 13px;
+		color: #626262;
+	} article img {width: 100%; margin: 5px;}
+
+@media all and (max-width: 955px) { 
+	article {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+}
+
+	a {
+		color: #FF6B6B;
+	}
+  }
+
+
+
+.profile-activity_box {
+	button {
+		border: none;
+		background: none;
+	}
+
+	button > span {
+		color: #FF7A7A;
+	}
+
+}
+	.profile-activity_box {
+		.glyphicon-heart-empty:hover,.glyphicon-retweet:hover,.glyphicon-option-horizontal:hover {
+color: #FF7A7A;
+		}
+		.glyphicon-heart-empty,.glyphicon-retweet,.glyphicon-option-horizontal {
+vertical-align: bottom;
+		}
+	}
+
+
+  .header-stand {
+  	  	font-size: 20px;
+  	color: #59FF84;
+  }
+
+  .item-main {
+	background-color: #FF5555;
+	margin: 0 auto 20px;
+	text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px solid red;
+    
+@extend %box-style;
+}
+
+
+%box-style {
+	-webkit-box-shadow: 20px 20px #ccc;
+    -moz-box-shadow: 20px 20px #ccc;
+    -ms-box-shadow: 20px 20px #ccc;
+    -o-box-shadow: 20px 20px #ccc;
+    box-shadow: 20px 20px #ccc;
+}
+
+h1.header-title {
+	@extend .header-stand;
+}
+
+h2.inner-title {
+	@extend .header-stand
+}
+
+
+@for $i from 1 to 16 {
+	.item-#{$i} {
+			width: (100px / 2 + 1 );
+		@extend .item-main
+	
+	}
+}
+
+
+}
